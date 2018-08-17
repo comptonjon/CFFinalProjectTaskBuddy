@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B16660A721267F0600526DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16660A621267F0600526DFF /* AppDelegate.swift */; };
-		B16660A921267F0600526DFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16660A821267F0600526DFF /* ViewController.swift */; };
+		B16660A921267F0600526DFF /* ChooseUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16660A821267F0600526DFF /* ChooseUserVC.swift */; };
 		B16660AC21267F0600526DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16660AA21267F0600526DFF /* Main.storyboard */; };
 		B16660AF21267F0600526DFF /* CFFinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B16660AD21267F0600526DFF /* CFFinalProject.xcdatamodeld */; };
 		B16660B121267F0700526DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16660B021267F0700526DFF /* Assets.xcassets */; };
 		B16660B421267F0700526DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16660B221267F0700526DFF /* LaunchScreen.storyboard */; };
 		B16660BF21267F0700526DFF /* CFFinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16660BE21267F0700526DFF /* CFFinalProjectTests.swift */; };
 		B16660CA21267F0700526DFF /* CFFinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16660C921267F0700526DFF /* CFFinalProjectUITests.swift */; };
+		B16660D82126818C00526DFF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16660D72126818C00526DFF /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		B16660A321267F0600526DFF /* CFFinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFFinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16660A621267F0600526DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B16660A821267F0600526DFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B16660A821267F0600526DFF /* ChooseUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseUserVC.swift; sourceTree = "<group>"; };
 		B16660AB21267F0600526DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B16660AE21267F0600526DFF /* CFFinalProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CFFinalProject.xcdatamodel; sourceTree = "<group>"; };
 		B16660B021267F0700526DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		B16660C521267F0700526DFF /* CFFinalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFFinalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16660C921267F0700526DFF /* CFFinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFFinalProjectUITests.swift; sourceTree = "<group>"; };
 		B16660CB21267F0700526DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16660D72126818C00526DFF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				B16660A621267F0600526DFF /* AppDelegate.swift */,
-				B16660A821267F0600526DFF /* ViewController.swift */,
+				B16660A821267F0600526DFF /* ChooseUserVC.swift */,
 				B16660AA21267F0600526DFF /* Main.storyboard */,
 				B16660B021267F0700526DFF /* Assets.xcassets */,
 				B16660B221267F0700526DFF /* LaunchScreen.storyboard */,
 				B16660B521267F0700526DFF /* Info.plist */,
 				B16660AD21267F0600526DFF /* CFFinalProject.xcdatamodeld */,
+				B16660D72126818C00526DFF /* UserCell.swift */,
 			);
 			path = CFFinalProject;
 			sourceTree = "<group>";
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16660A921267F0600526DFF /* ViewController.swift in Sources */,
+				B16660D82126818C00526DFF /* UserCell.swift in Sources */,
+				B16660A921267F0600526DFF /* ChooseUserVC.swift in Sources */,
 				B16660A721267F0600526DFF /* AppDelegate.swift in Sources */,
 				B16660AF21267F0600526DFF /* CFFinalProject.xcdatamodeld in Sources */,
 			);
@@ -435,7 +439,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9G4QRLLG;
 				INFOPLIST_FILE = CFFinalProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +458,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9G4QRLLG;
 				INFOPLIST_FILE = CFFinalProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
